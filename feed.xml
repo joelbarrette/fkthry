@@ -1,29 +1,36 @@
 ---
 layout: null
 ---
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"  xmlns:content="http://purl.org/rss/1.0/modules/content/">
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  
+  <?xml version="1.0" encoding="UTF-8"?>
+  <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    {% if site.title %}
     <title>{{ site.title | xml_escape }}</title>
-    {% endif %}
-    {% if site.rss-description %}
-    <description>{{ site.rss-description | xml_escape }}</description>
-    {% endif %}
-    <link>{{ '' | absolute_url }}</link>
-    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% assign excerpt_length = site.excerpt_length | default: 50 %}
-    {% for post in site.posts limit:20 %}
+    <link></link>
+    <language></language>
+    <copyright></copyright>
+    <itunes:subtitle></itunes:subtitle>
+    <itunes:author></itunes:author>
+    <itunes:summary></itunes:summary>  
+    <itunes:owner>
+      <itunes:name></itunes:name>
+      <itunes:email></itunes:email>
+    </itunes:owner>
+    <itunes:image href="" />
+    <itunes:category text=""/>
+    
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}
-        </description>
+        <itunes:author>Kotek & In1t</itunes:author>
+        <itunes:subtitle></itunes:subtitle>
+        <itunes:summary>{% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
+          {{ post.content | strip_html | xml_escape | truncatewords: excerpt_length }}</itunes:summary>
+        <itunes:image href="https://github.com/joelbarrette/fkthry/raw/master/assets/img/FKTHEORY%20Emblem%20White%20v1.png" />
+        <enclosure url="" length="" type="audio/mpeg"/>
+        <guid>{{ post.url | absolute_url }}</guid>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <itunes:duration></itunes:duration>
       </item>
-    {% endfor %}
+    
   </channel>
-</rss>
+  </rss>
