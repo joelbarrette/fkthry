@@ -6,7 +6,8 @@ layout: null
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 <channel>
   <title>{{ site.title | xml_escape }}</title>
-  <link></link>
+  <link>{{ site.url }}</link>
+  <description>{{ site.description | xml_escape }}</description>
   <language></language>
   <copyright></copyright>
   <itunes:subtitle></itunes:subtitle>
@@ -18,7 +19,7 @@ layout: null
   </itunes:owner>
   <itunes:image href="" />
   <itunes:category text=""/>
-
+  {% for post in site.posts %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <itunes:author></itunes:author>
