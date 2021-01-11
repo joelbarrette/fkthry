@@ -53,7 +53,7 @@ xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
 {% endfor %}
     <guid isPermaLink="{% if post.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}{% if post.podcast_guid %}/{{ post.podcast_guid }}{% else %}{{ post.url }}{% endif %}</guid>
     <description>
-        <![CDATA[{{ post.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+        test
     </description>
     <content:encoded>
         <![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]>
