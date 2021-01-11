@@ -11,7 +11,7 @@
 feed:
   path: feed.xml
 
-podcast_url: https://joelbarrette.github.io/fkthry/feed.xml
+podcast_url: https://fkthry.com
 album_art: https://github.com/joelbarrette/fkthry/raw/master/assets/img/cover.png
 title: Fktheory Podcast
 owner: Kotek and In1t
