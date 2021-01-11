@@ -8,6 +8,8 @@
 # Name of website
 title: 
 
+feed:
+  path: feed.xml
 
 podcast_url: https://joelbarrette.github.io/fkthry/feed.xml
 podcast_album_art: https://github.com/joelbarrette/fkthry/raw/master/assets/img/FKTHEORY%20Emblem%20White%20v1.png
