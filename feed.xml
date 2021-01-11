@@ -25,7 +25,7 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <itunes:summary>{{ site.summary }}</itunes:summary>
 <itunes:author>{{ site.author }}</itunes:author>
 <itunes:explicit>{{ site.explicit }}</itunes:explicit>
-<itunes:image href="{{ site.url }}{{ site.album_art }}" />
+<itunes:image href="{{ site.album_art }}" />
 <itunes:owner>
 <itunes:name>{{ site.owner }}</itunes:name>
 <itunes:email>{{ site.email }}</itunes:email>
