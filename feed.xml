@@ -38,8 +38,6 @@ xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 <link>{{ site.url }}</link>
 </image>
 <itunes:category text="{{ site.category }}">
-<itunes:category text="{{ site.subcategory_one }}" />
-<itunes:category text="{{ site.subcategory_two }}" />
 </itunes:category>
 {% for post in site.posts %}
   <item>
