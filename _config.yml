@@ -6,27 +6,27 @@
 # --- Required options --- #
 
 # Name of website
-title: 
+
 
 feed:
   path: feed.xml
 
 podcast_url: https://joelbarrette.github.io/fkthry/feed.xml
-podcast_album_art: https://github.com/joelbarrette/fkthry/raw/master/assets/img/FKTHEORY%20Emblem%20White%20v1.png
-podcast_title: Fktheory Podcast
-podcast_owner: Kotek and In1t
-podcast_email: public@joelbarrette.com
-podcast_category: Music
-podcast_subcategory_one: Production
-podcast_subcategory_two: Technology
-podcast_explicit: "no"
-podcast_author: Kotek and In1t
-podcast_description: Kotek and IN1T making everything more complicatedley simple
-podcast_summary: Kotek and IN1T making everything more complicatedley simple
-podcast_subtitle: Kotek and IN1T making everything more complicatedley simple
+album_art: https://github.com/joelbarrette/fkthry/raw/master/assets/img/FKTHEORY%20Emblem%20White%20v1.png
+title: Fktheory Podcast
+owner: Kotek and In1t
+email: public@joelbarrette.com
+category: Music
+subcategory_one: Production
+subcategory_two: Technology
+explicit: "no"
+author: Kotek and In1t
+description: Kotek and IN1T making everything more complicatedley simple
+summary: Kotek and IN1T making everything more complicatedley simple
+subtitle: Kotek and IN1T making everything more complicatedley simple
 
 # Your name to show in the footer
-author: Kotek & In1t
+
 
 # --- List of links in the navigation bar --- #
 
