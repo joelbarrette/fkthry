@@ -59,7 +59,7 @@ xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
         <![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]>
     </content:encoded>
 
-    <enclosure url="{{ post.podcast_link }}" length="{{ post.podcast_length }}" type="audio/mpeg" />
+    <enclosure url={{ post.podcast_link }} length={{ post.podcast_length }} type="audio/mpeg" />
     <itunes:subtitle>"test"</itunes:subtitle>
     <itunes:summary><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
     <itunes:author>{{ site.author }}</itunes:author>
